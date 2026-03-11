@@ -1,0 +1,35 @@
+{
+  "name": "@noahworkman/mcp-server-ffmpeg",
+  "version": "0.1.0",
+  "description": "MCP server for FFmpeg media inspection and transformation",
+  "license": "MIT",
+  "mcpName": "io.github.noahworkman/mcp-server-ffmpeg",
+  "type": "module",
+  "bin": {
+    "mcp-server-ffmpeg": "dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "test": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@vitest/coverage-v8": "^2.1.8",
+    "shx": "^0.3.4",
+    "typescript": "^5.8.2",
+    "vitest": "^2.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NoahWorkman/mcp-ffmpeg"
+  },
+  "homepage": "https://github.com/NoahWorkman/mcp-ffmpeg",
+  "bugs": "https://github.com/NoahWorkman/mcp-ffmpeg/issues"
+}
